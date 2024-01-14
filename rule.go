@@ -83,7 +83,7 @@ func MutuallyExclusive(flags ...*Flags) Rule {
 					presetParams(fs),
 				)
 			}
-			isOtherGrouopSet = isSet
+			isOtherGrouopSet = isOtherGrouopSet || isSet
 		}
 		return nil
 	})
